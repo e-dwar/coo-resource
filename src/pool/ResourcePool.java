@@ -10,6 +10,8 @@ public abstract class ResourcePool {
 	protected abstract Resource createResource();
 	
 	public ResourcePool(int nResources) {
+		freeResources = new ArrayList<Resource>();
+		busyResources = new ArrayList<Resource>(); 
 		while ((nResources--) > 0) {
 			freeResources.add(this.createResource());
 		}

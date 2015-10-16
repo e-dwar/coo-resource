@@ -9,7 +9,7 @@ public class ResourcePoolTest {
 
 	@Test(expected=NoSuchElementException.class)
 	public void provideResourceTest() {
-		ResourcePoolMock pool = new ResourcePoolMock(2);
+		ResourcePoolMock pool = new ResourcePoolMock(1);
 		assertTrue(pool.provideResource() != null);
 		pool.provideResource();
 	}
