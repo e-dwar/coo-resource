@@ -2,5 +2,5 @@ package pool;
 
 public interface Resource {
 
-	public String description();
+    public String description();
 }
